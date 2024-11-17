@@ -13,8 +13,29 @@ int main() {
     for (int i = 0; i < size; ++i) {
         cin >> arr[i];
     }
-    cout << "Accepted numbers: ";
+
+    cout << "Accepted numbers: "; // artem - sterty cei cukl
     for (int i = 0; i < size; ++i) {
         cout << arr[i] << " ";
     }
+
+    cout << endl;
+    cout << endl;
+    cout << "Negative elements in even positions: ";
+    for (int i = 0; i < 14; ++i) {
+        if (i % 2 == 0 && arr[i] < 0) {
+            cout << arr[i] << " ";
+        }
+    }
+
+    cout << endl;
+    cout << endl;
+    cout << "Array elements in odd positions: " << endl;
+    for (int i = 0; i < 14; ++i) {
+        if (i % 2 != 0) {
+            cout << arr[i] << " ";
+        }
+    }
+    cout << endl;
+
 }
