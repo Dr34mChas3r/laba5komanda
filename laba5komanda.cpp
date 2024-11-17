@@ -6,21 +6,21 @@
 using namespace std;
 
 int main() {
+
+
+    // Частина, яку виконала Вікторія
     const int size = 14;
     int arr[size];
 
-    cout << "Input " << size << " numbers:";
+    cout << "Input " << size << " numbers: ";
     for (int i = 0; i < size; ++i) {
         cin >> arr[i];
     }
-
-    cout << "Accepted numbers: "; // artem - sterty cei cukl
-    for (int i = 0; i < size; ++i) {
-        cout << arr[i] << " ";
-    }
+    // Частина, яку виконала Вікторія
 
 
 
+    // Частина, яку виконав Любомир 
     bool allPositive = true;
     bool allNegative = true;
 
@@ -43,17 +43,17 @@ int main() {
             arr[i] = 0;
         }
     }
-    cout << endl;
     cout << "Array after checking on all >0 or <0: ";
     for (int i = 0; i < size; ++i) {
         cout << arr[i] << " ";
     }
     cout << endl;
-    cout << endl;
+
+    // Частина, яку виконав Любомир 
 
 
 
-
+    // Частина, котру виконав Володимир 
     cout << "Negative elements in even positions: ";
     for (int i = 0; i < 14; ++i) {
         if (i % 2 == 0 && arr[i] < 0) {
@@ -62,8 +62,8 @@ int main() {
     }
 
     cout << endl;
-    cout << endl;
-    cout << "Array elements in odd positions: " << endl;
+
+    cout << "Array elements in odd positions: ";
     for (int i = 0; i < 14; ++i) {
         if (i % 2 != 0) {
             cout << arr[i] << " ";
@@ -72,10 +72,11 @@ int main() {
 
     cout << endl;
 
+    // Частина, котру виконав Володимир 
 
 
 
-
+    // Частина, котру виконав Сергій 
     int sumNegative = 0, countNegative = 0;
     int sumPositive = 0, countPositive = 0;
 
@@ -109,6 +110,8 @@ int main() {
         cout << arr[i] << " ";
     }
     cout << endl;
+    // Частина, котру виконав Сергій 
 
-    
+
+
 }
