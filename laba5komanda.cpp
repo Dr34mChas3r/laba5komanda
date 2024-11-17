@@ -19,8 +19,41 @@ int main() {
         cout << arr[i] << " ";
     }
 
+
+
+    bool allPositive = true;
+    bool allNegative = true;
+
+    for (int i = 0; i < size; ++i) {
+        if (arr[i] <= 0) {
+            allPositive = false;
+        }
+        if (arr[i] >= 0) {
+            allNegative = false;
+        }
+    }
+
+    if (allPositive) {
+        for (int i = 0; i < size; ++i) {
+            arr[i] = 1;
+        }
+    }
+    else if (allNegative) {
+        for (int i = 0; i < size; ++i) {
+            arr[i] = 0;
+        }
+    }
+    cout << endl;
+    cout << "Array after checking on all >0 or <0: ";
+    for (int i = 0; i < size; ++i) {
+        cout << arr[i] << " ";
+    }
     cout << endl;
     cout << endl;
+
+
+
+
     cout << "Negative elements in even positions: ";
     for (int i = 0; i < 14; ++i) {
         if (i % 2 == 0 && arr[i] < 0) {
@@ -39,6 +72,10 @@ int main() {
 
     cout << endl;
 
+
+
+
+
     int sumNegative = 0, countNegative = 0;
     int sumPositive = 0, countPositive = 0;
 
@@ -55,6 +92,7 @@ int main() {
 
     int avgNegative = (countNegative > 0) ? sumNegative / countNegative : 0;
     int avgPositive = (countPositive > 0) ? sumPositive / countPositive : 0;
+
     cout << "Negative average: " << avgNegative << endl << "Positive average: " << avgPositive << endl;
 
     for (int i = 0; i < 14; ++i) {
@@ -72,4 +110,5 @@ int main() {
     }
     cout << endl;
 
+    
 }
