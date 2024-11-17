@@ -8,7 +8,7 @@ using namespace std;
 int main() {
 
 
-    // Частина, яку виконала Вікторія
+    // Viktoria
     const int size = 14;
     int arr[size];
 
@@ -16,11 +16,11 @@ int main() {
     for (int i = 0; i < size; ++i) {
         cin >> arr[i];
     }
-    // Частина, яку виконала Вікторія
+    // Viktoria
 
 
 
-    // Частина, яку виконав Любомир 
+    // Liubomyr
     bool allPositive = true;
     bool allNegative = true;
 
@@ -49,11 +49,11 @@ int main() {
     }
     cout << endl;
 
-    // Частина, яку виконав Любомир 
+    // Liubomyr
 
 
 
-    // Частина, котру виконав Володимир 
+    // Volodymyr
     cout << "Negative elements in even positions: ";
     for (int i = 0; i < 14; ++i) {
         if (i % 2 == 0 && arr[i] < 0) {
@@ -72,11 +72,11 @@ int main() {
 
     cout << endl;
 
-    // Частина, котру виконав Володимир 
+    // Volodymyr
 
 
 
-    // Частина, котру виконав Сергій 
+    // Serhii
     int sumNegative = 0, countNegative = 0;
     int sumPositive = 0, countPositive = 0;
 
@@ -110,7 +110,8 @@ int main() {
         cout << arr[i] << " ";
     }
     cout << endl;
-    // Частина, котру виконав Сергій 
+
+    // Serhii
 
 
 
